@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+
+android {
+
+configurations{
+    all*.exclude  module: 'firebase-appindexing'
+    all*.exclude  module: 'play-services-ads-lite'
+}
+
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        applicationId "tn.app.event.com.myapplication1"
+        minSdkVersion 14
+        targetSdkVersion 25
+        versionCode 1
+        versionName "uu.0"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:25.1.0'
+    compile 'com.google.android.gms:play-services-ads:11.2.0'
+    compile 'com.android.support:design:25.2.0'
+    compile 'com.google.android.gms:play-services:10.0.1'
+
+
+}
+dependencies{
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+
+
+}

@@ -1,0 +1,221 @@
+<resources>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+
+    <!-- ******************************** pour button *******************************************-->
+    <attr name="iconDrawable" format="integer" />
+    <attr name="animate" format="boolean" />
+    <!-- ****************************************************************************************-->
+
+    <!-- ********************** pour edit text *******************************************-->
+    <declare-styleable name="MaterialEditText">
+        <!-- The base color of the line and the texts. Default is black. -->
+        <attr name="baseColor" format="color"/>
+        <!-- The highlight color of the line, and the floating label if the highlightFloatingLabel is true. -->
+        <attr name="primaryColor" format="color"/>
+        <!-- How the floating label should be shown. Default is none -->
+        <attr name="floatingLabel">
+            <enum name="none" value="0"/>
+            <enum name="normal" value="1"/>
+            <enum name="highlight" value="2"/>
+        </attr>
+        <!-- The color for when something is wrong.(e.g. exceeding max characters) -->
+        <attr name="errorColor" format="color"/>
+        <!-- Min characters count limit. 0 means no limit. -->
+        <attr name="minCharacters" format="integer"/>
+        <!-- max Characters count limit. 0 means no limit. -->
+        <attr name="maxCharacters" format="integer"/>
+        <!-- Whether to show the bottom ellipsis in singleLine mode -->
+        <attr name="singleLineEllipsis" format="boolean"/>
+        <!-- Reserved bottom text lines count, no matter if there is some helper/error text. -->
+        <attr name="minBottomTextLines" format="integer"/>
+        <!-- Helper text at the bottom -->
+        <attr name="helperText" format="string"/>
+        <!-- Helper text color -->
+        <attr name="helperTextColor" format="color"/>
+        <!-- Font of the paint used to draw accent texts -->
+        <attr name="accentTypeface" format="string"/>
+        <!-- Custom float label text -->
+        <attr name="floatingLabelText" format="string"/>
+        <!-- spacing between the main text and the floating label -->
+        <attr name="floatingLabelSpacing" format="dimension"/>
+        <!-- Hide underline -->
+        <attr name="hideUnderline" format="boolean"/>
+        <!-- Auto validate -->
+        <attr name="autoValidate" format="boolean"/>
+        <!-- Left icon -->
+        <attr name="iconLeft" format="reference"/>
+        <!-- Right icon -->
+        <attr name="iconRight" format="reference"/>
+        <!-- Padding between icon(s) and the main area. 8dp by default. -->
+        <attr name="iconPadding" format="dimension"/>
+        <!-- The floating label's text size. 12sp by default. -->
+        <attr name="floatingLabelTextSize" format="dimension"/>
+        <!-- The bottom texts' size. 12sp by default. -->
+        <attr name="bottomTextSize" format="dimension"/>
+    </declare-styleable>
+    <!-- ****************************************************************************************-->
+
+    <declare-styleable name="FeatureCoverFlow">
+        <attr name="coverWidth" format="dimension" />
+        <attr name="coverHeight" format="dimension" />
+        <attr name="spacing" format="float" />
+        <attr name="rotationThreshold" format="float" />
+        <attr name="scalingThreshold" format="float" />
+        <attr name="adjustPositionThreshold" format="float" />
+        <attr name="adjustPositionMultiplier" format="float" />
+        <attr name="maxRotationAngle" format="float" />
+        <attr name="maxScaleFactor" format="float" />
+        <attr name="circlePathRadius" format="float" />
+        <attr name="circlePathRadiusInMatrixSpace" format="float" />
+        <attr name="reflectionHeight" format="float" />
+        <attr name="reflectionGap" format="dimension" />
+        <attr name="reflectionOpacity" format="integer" />
+        <attr name="tunningWidgetSize" format="dimension" />
+        <attr name="alignAnimationTime" format="integer" />
+        <attr name="verticalPaddingTop" format="dimension" />
+        <attr name="verticalPaddingBottom" format="dimension" />
+        <attr name="reflectionBackroundColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="EndlessLoopAdapterContainer">
+        <attr name="shouldRepeat" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="BasicContentBand">
+        <attr name="gridMode">
+            <flag name="fixed" value="0"/>
+            <flag name="dynamic" value="1"/>
+        </attr>
+
+        <attr name="deviceSpecificPixelSize" format="integer" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ColoredRatingBar">
+        <attr name="indicator" format="boolean" />
+        <attr name="rating" format="float" />
+        <attr name="type" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="small" value="1" />
+        </attr>
+        <attr name="coloredRatingBarStyle" format="reference" />
+        <!-- Indicator RatingBar style. -->
+        <attr name="coloredRatingBarStyleIndicator" format="reference" />
+        <!-- Small RatingBar style. -->
+        <attr name="coloredRatingBarStyleSmall" format="reference" />
+        <!-- Small indicator RatingBar style. -->
+        <attr name="coloredRatingBarStyleSmallIndicator" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ShimmerView">
+        <attr name="reflectionColor" format="color"/>
+    </declare-styleable>
+
+    <!--**************************************** material preferance ****************************-->
+    <attr name="mp_colorAccent"
+        format="reference|color"/>
+    <!-- ****************************************************************************************-->
+    -- ***********************************material checkbox ***********************************-->
+    <!-- CheckBox Attribute -->
+    <declare-styleable name="CheckBox">
+        <attr name="checkbox_color" format="color"/>
+        <attr name="checkbox_checked_color" format="color"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="WeekView">
+        <attr name="firstDayOfWeek" format="enum">
+            <enum name="sunday" value="1"/>
+            <enum name="monday" value="2"/>
+            <enum name="tuesday" value="3"/>
+            <enum name="wednesday" value="4"/>
+            <enum name="thursday" value="5"/>
+            <enum name="friday" value="6"/>
+            <enum name="saturday" value="7"/>
+        </attr>
+        <attr name="hourHeight" format="dimension"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="eventTextSize" format="dimension"/>
+        <attr name="headerColumnPadding" format="dimension"/>
+        <attr name="headerRowPadding" format="dimension"/>
+        <attr name="columnGap" format="dimension"/>
+        <attr name="headerColumnTextColor" format="color"/>
+        <attr name="noOfVisibleDays" format="integer"/>
+        <attr name="headerRowBackgroundColor" format="color"/>
+        <attr name="dayBackgroundColor" format="color"/>
+        <attr name="hourSeparatorColor" format="color"/>
+        <attr name="todayBackgroundColor" format="color"/>
+        <attr name="todayHeaderTextColor" format="color"/>
+        <attr name="hourSeparatorHeight" format="dimension"/>
+        <attr name="eventTextColor" format="color"/>
+        <attr name="eventPadding" format="dimension"/>
+        <attr name="headerColumnBackground" format="color"/>
+        <attr name="dayNameLength" format="enum">
+            <enum name="length_short" value="1"/>
+            <enum name="length_long" value="2"/>
+        </attr>
+        <attr name="overlappingEventGap" format="dimension"/>
+        <attr name="eventMarginVertical" format="dimension"/>
+        <attr name="xScrollingSpeed" format="float"/>
+    </declare-styleable>
+<!--
+for btn map
+-->
+
+    <declare-styleable name="RapidFloatingActionLayout">
+        <attr name="rfal_frame_color" format="color"/>
+        <attr name="rfal_frame_alpha" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="RapidFloatingActionButton">
+        <attr name="rfab_size" format="enum">
+            <!-- 56dp -->
+            <enum name="normal" value="0"/>
+            <!-- 40dp -->
+            <enum name="mini" value="1"/>
+        </attr>
+        <attr name="rfab_drawable" format="reference"/>
+        <attr name="rfab_color_normal" format="color"/>
+        <attr name="rfab_color_pressed" format="color"/>
+        <attr name="rfab_shadow_radius" format="dimension"/>
+        <attr name="rfab_shadow_color" format="color"/>
+        <attr name="rfab_shadow_dx" format="dimension"/>
+        <attr name="rfab_shadow_dy" format="dimension"/>
+        <!-- identificationCode -->
+        <attr name="rfab_identification_code" format="string"/>
+    </declare-styleable>
+
+
+    <!-- ********************************** pour refrech material *******************************-->
+    <declare-styleable name="SwipyRefreshLayout">
+        <attr name="direction">
+            <enum name="top" value="0" />
+            <enum name="bottom" value="1" />
+            <enum name="both" value="2" />
+        </attr>
+    </declare-styleable>
+    <!-- ****************************************************************************************-->
+    <!--material progress -->
+    <declare-styleable name="ProgressWheel">
+        <attr name="matProg_progressIndeterminate" format="boolean" />
+        <attr name="matProg_barColor" format="color" />
+        <attr name="matProg_rimColor" format="color" />
+        <attr name="matProg_rimWidth" format="dimension" />
+        <attr name="matProg_spinSpeed" format="float" />
+        <attr name="matProg_barSpinCycleTime" format="integer" />
+        <attr name="matProg_circleRadius" format="dimension" />
+        <attr name="matProg_fillRadius" format="boolean" />
+        <attr name="matProg_barWidth" format="dimension" />
+        <attr name="matProg_linearProgress" format="boolean" />
+    </declare-styleable>
+
+</resources>

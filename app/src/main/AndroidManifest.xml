@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tn.app.event.com.myapplication1">
+
+
+
+    <permission
+        android:name="com.javapapers.android.googleplacesdetail.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+
+    <uses-permission android:name="com.javapapers.android.googleplacesdetail.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY" />
+
+    <utilise-permission android:name="com.samsung.WATCH_APP_TYPE.Integrated" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:debuggable ="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity2" />
+        <activity android:name=".Activity3" />
+        <activity android:name=".favoris" />
+        <activity android:name=".details2" />
+        <activity android:name=".festival" />
+        <activity android:name=".holi" />
+        <activity android:name=".electro" />
+        <activity android:name=".Zumba" />
+        <activity android:name=".Randonnee" />
+        <activity android:name=".Inscription" />
+        <activity android:name=".Parametre" />
+        <activity android:name=".FormulaireAjout" />
+        <activity android:name=".Connecter" />
+        <activity android:name=".parville" />
+        <activity android:name=".map" />
+        <activity android:name=".BackgroundWorker" />
+        <activity android:name=".welcome" />
+        <activity android:name=".event" />
+        <activity android:name=".tunis" />
+        <activity android:name=".tatawine" />
+        <activity android:name=".sfax" />
+        <activity android:name=".beja" />
+        <activity android:name=".sousse" />
+        <activity android:name=".nabeul" />
+        <!--
+             ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".karwen" />
+        <activity android:name=".mahdia" />
+        <activity android:name=".gabes" />
+        <activity android:name=".kef" />
+        <activity android:name=".bizerte" />
+        <activity android:name=".jendouba" />
+        <activity android:name=".ariana" />
+        <activity android:name=".sidibouzid" />
+        <activity android:name=".mednine" />
+        <activity android:name=".zaghoune" />
+        <activity android:name=".kbeli" />
+        <activity android:name=".monastir" />
+        <activity android:name=".seliana" />
+        <activity android:name=".arous" />
+        <activity android:name=".manouba" />
+        <activity android:name=".kas" />
+        <activity android:name=".tozeur" />
+        <activity android:name=".profil" />
+        <activity android:name=".harja" />
+        <activity android:name=".jaaf" />
+        <activity android:name=".benars" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAyy5x0GhHBx3HP-s8Gs_EFQiB2EXMq5EU" />
+
+        <activity android:name=".MapsActivity" />
+        <activity android:name=".tata"/>
+        <uses-library android:name="com.google.android.maps" />
+    </application>
+
+</manifest>

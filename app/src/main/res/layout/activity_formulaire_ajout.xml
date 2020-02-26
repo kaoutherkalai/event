@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:fitsSystemWindows="true"
+android:background="#ff1fd6"
+    android:fillViewport="false">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="56dp"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:weightSum="1"
+    android:background="#ff1fd6">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/textv"
+        android:id="@+id/textView"
+        android:textStyle="bold|italic"
+
+        android:textSize="27sp"
+        android:layout_marginTop="8dp"
+        android:textColor="#5595d1"
+        android:layout_gravity="center_horizontal" />
+
+
+        <EditText
+            android:id="@+id/nomEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:hint="@string/nomEvent" />
+
+
+
+
+        <EditText
+            android:id="@+id/Date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="@string/Date"
+         />
+
+
+
+
+        <EditText
+            android:id="@+id/ville"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="@string/ville"
+    />
+
+
+        <EditText
+            android:id="@+id/des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/dess" />
+
+
+
+        <EditText
+            android:id="@+id/lieu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/lieuu"
+            />
+    <Button
+        android:id="@+id/soumettre"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+
+        android:layout_marginBottom="24dp"
+        android:padding="12dp"
+        android:text="@string/soumettre"
+        android:background="#3391ee" />
+
+
+</LinearLayout>
+</ScrollView>
+

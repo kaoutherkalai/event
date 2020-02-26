@@ -1,0 +1,128 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:fillViewport="false"
+    android:background="#ef7878">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/title"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+
+
+            android:contextClickable="false"
+            android:clickable="false" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/highlighted_text_material_light"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/textview10"
+            android:id="@+id/textView10"
+            android:textSize="17sp" />
+
+        <CheckBox
+            android:layout_width="87dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox2"
+            android:checked="false"
+            android:layout_gravity="center_horizontal|right"
+            android:gravity="right|top"
+            android:clickable="true" />
+
+        <View
+            android:id="@+id/div"
+            android:layout_width="match_parent"
+
+            android:background="@color/highlighted_text_material_light"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/ti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/ti"
+
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+
+
+
+            android:clickable="true" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/textView1"
+            android:id="@+id/textView1"
+            android:textSize="17sp" />
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/highlighted_text_material_light"
+            />
+
+        <TextView
+            android:id="@+id/te"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/te"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+
+
+            android:contextClickable="false"
+            android:clickable="false"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/textVie"
+            android:id="@+id/textVie"
+            android:textSize="17sp"
+            android:layout_marginTop="8dp"/>
+
+        <View
+            android:id="@+id/dr"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/highlighted_text_material_light"
+            android:layout_marginTop="112dp"
+            android:layout_weight="0.40" />
+
+    </LinearLayout>
+</ScrollView>

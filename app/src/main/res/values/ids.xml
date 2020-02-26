@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="date" type="id">date</item>
+    <item name="textView2" type="id">text2</item>
+    <item name="Type" type="id">typee</item>
+    <item name="lieu" type="id">lieu</item>
+    <item name="buttonB" type="id">b</item>
+    <item name="inscrie" type="id">inscri</item>
+    <item name="connecter" type="id">connect</item>
+    <item name="connect" type="id">connect</item>
+</resources>

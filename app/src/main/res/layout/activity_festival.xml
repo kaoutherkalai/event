@@ -1,0 +1,101 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:fillViewport="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="343dp"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="11 ÈME EDITION DU FESTIVAL DES ARTS NUMÉRIQUES 2016"
+            android:textSize="15sp"
+            android:background="#21d7f3"
+            android:textStyle="bold|italic"
+            android:id="@+id/nom_events_d"
+            android:textAlignment="center" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="340dp"
+            android:layout_height="113dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/them"
+            android:contentDescription="mm" />
+
+
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="@string/catfes"
+            android:id="@+id/text_categorie"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/categorie"
+            android:textColor="#66c4ed" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/culture"
+            android:id="@+id/text_cat"
+            android:textSize="17sp"
+            android:textStyle="italic"
+            android:stretchColumns="1"
+
+            />
+
+        <TextView
+
+            android:id="@+id/lieu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lieufes"
+            android:textSize="20sp"
+            android:drawableLeft="@drawable/llm"
+            android:textStyle="bold"
+            android:stretchColumns="1"
+            android:layout_marginTop="5dp"
+            android:textColor="#66c4ed" />
+
+        <TextView
+            android:id="@+id/textlieu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ven 20 mai 2016 à 09h00 au dimanche 22 mai 2016 à 21h00,Institut Français de Tunisie, 20/22 avenue de Paris, Tunis, Tunisia"
+            android:textSize="15sp"
+            android:stretchColumns="1"
+            android:textStyle="italic"/>
+
+
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/descfesc"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/discription"
+            android:textColor="#66c4ed" />
+
+        <TextView
+            android:id="@+id/text_description"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textStyle="italic"
+            android:textSize="15sp"
+            android:scrollbars="vertical"
+            android:stretchColumns="1"
+            android:layout_marginLeft="7dp"
+            android:layout_weight="7.85"
+            android:text="Depuis 2006, Arts, Innovation et Création ont rendez-vous chaque année grâce au Festival des Arts Numériques, une manifestation unique en son genre dans le panorama des festivals tunisiens. Une fois de plus, Madame Samia Chelbi manager du Digiart Living Lab et présidente de l’association tunisienne des technologies créatives (CREATEC) et toute l’équipe du living lab ont imaginé une programmation aussi riche que variée propre à séduire un large auditoire et à rallier de nouvelles et jeunes startups créatives autour d’un nouveau concept ou une forme de promotion à travers l’innovation ouverte et sociale. L’institut Français de Tunisie partenaire du Digiart Living Lab, hébergera cette 11ème édition qui se veut un médiateur entre toutes les composantes des différentes disciplines et parties prenantes des industries culturelles et créatives." />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,101 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:fillViewport="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/nomdetails"
+            android:textSize="17sp"
+            android:background="#21d7f3"
+            android:textStyle="bold|italic"
+            android:id="@+id/nom_events_d"
+            android:textAlignment="center" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="113dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/them"
+            android:layout_weight="2.10"
+            android:contentDescription="@string/item" />
+
+
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="@string/catfes"
+            android:id="@+id/text_categorie"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/categorie"
+            android:textColor="#66c4ed" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/typedetails"
+            android:id="@+id/text_cat"
+            android:textSize="17sp"
+            android:textStyle="italic"
+            android:stretchColumns="1"
+
+            />
+
+        <TextView
+
+            android:id="@+id/lieu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lieufes"
+            android:textSize="20sp"
+            android:drawableLeft="@drawable/llm"
+            android:textStyle="bold"
+            android:stretchColumns="1"
+            android:layout_marginTop="5dp"
+            android:textColor="#66c4ed" />
+
+        <TextView
+            android:id="@+id/textlieu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lieudetails"
+            android:textSize="15sp"
+            android:stretchColumns="1"
+            android:textStyle="italic"/>
+
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/descfesc"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/discription"
+            android:textColor="#66c4ed" />
+
+        <TextView
+            android:id="@+id/text_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:textSize="15sp"
+            android:scrollbars="vertical"
+            android:stretchColumns="1"
+            android:text="@string/descdetails"
+            android:layout_marginLeft="7dp"
+            android:layout_weight="7.85" />
+
+    </LinearLayout>
+</ScrollView>
